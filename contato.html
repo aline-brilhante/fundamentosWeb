@@ -5,10 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Contato </title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 <body>
 
-    <ul>
+    <ul id="menu">
         <li>
             <a href="index.html"> Home </a>
         </li>
@@ -17,31 +20,65 @@
         </li>
     </ul>
 
-    <h1> Sobre a autora </h1>
+    <h1 class="center">Sobre a autora</h1>
 
-    <p>
-        Aline Moreira Brilhante, 25 anos, paulistana, estudante de desenvolvimento 
-        web fullstack na Generation Brasil, amante de gatos, culinária vegana, 
-        música, filmes e séries, e dá uma de artista nas horas vagas.
-    </p>
+    <div class="container">
+        <div>
+            <img class="br-50 p-30" width="300px" height="300px" src="assets/img/fotoeu.jpg" alt="Foto da autora do blog, de pele branca e cabelos 
+            pretos ondulados, usando óculos redondos, camiseta amarela com desenhos coloridos em volta 
+            do seu rosto.">
+        </div>
+        <div>
+            <p class="justify p-60">
+                Aline Moreira Brilhante, 25 anos, paulistana, estudante de desenvolvimento 
+                web fullstack na Generation Brasil, amante de gatos, culinária vegana, 
+                música, filmes e séries, e dá uma de artista nas horas vagas.
+            </p>
+        </div>
+       
+    </div>
+    <div class="p-30 center mb-50">
+        <h2> Entre em contato comigo </h2>
 
-    <h2> Entre em contato comigo! </h2>
+        <form>
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome">
+            <br>
+            <br>
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email">
+            <br>
+            <br>
+            <label for="assunto">Assunto:</label><br>
+            <textarea name="assunto" id="assunto" cols="60" rows="5"></textarea>
+            <br>
+            <br>
+            <button>Enviar</button>
+        </form>
+    </div>
+    <hr>
+    <footer class="center">
 
-    <form>
-        <label for="nome">Nome:</label><br>
-        <input type="text" id="nome">
-        <br>
-        <br>
-        <label for="email">E-mail:</label><br>
-        <input type="email" id="email">
-        <br>
-        <br>
-        <label for="assunto">Assunto:</label><br>
-        <textarea name="assunto" id="assunto" cols="60" rows="5"></textarea>
-        <br>
-        <br>
-        <button>Enviar</button>
-    </form>
+        <div class="container">
+            <a href="https://www.last.fm/pt/user/toxicradioyeah" target="_blank">
+                <img class="tm-social p-30" src="assets/img/lastfm.png" alt="Logo do Last.fm">
+            </a>
 
+            <a href="https://letterboxd.com/brilhanteline/" target="_blank">
+                <img class="tm-social p-30" src="assets/img/letterboxd.png" alt="Logo do Letterboxd">
+            </a>
+
+            <a href="https://www.linkedin.com/in/alinebrilhante/" target="_blank">
+                <img class="tm-social p-30" src="assets/img/linkedin.png" alt="Logo do Linkedin">
+            </a>
+
+            <a href="https://github.com/aline-brilhante" target="_blank">
+                <img class="tm-social p-30" src="assets/img/github.png" alt="Logo do Github">
+            </a>
+        </div>
+        <p>
+            Todos os direitos reservados a Aline Brilhante &copy;
+        </p>  
+    </footer>
 </body>
 </html>
